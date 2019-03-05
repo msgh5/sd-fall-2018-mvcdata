@@ -13,7 +13,6 @@ namespace MvcData.Models.Domain
         public DateTime DueDate { get; set; }
         public DateTime DateCreated { get; private set; }
         public DateTime? DateUpdated { get; set; }
-        public string Password { get; set; }
 
         public Todo()
         {
