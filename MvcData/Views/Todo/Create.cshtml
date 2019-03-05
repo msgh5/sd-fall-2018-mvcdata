@@ -1,0 +1,24 @@
+﻿@model CreateTodoViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Title">Title</label>
+        @Html.TextBoxFor(input => input.Title, new { @class = "form-control", placeholder = "Title" })
+    </div>
+    <div class="form-group">
+        <label for="Description">Description</label>
+        @Html.TextBoxFor(input => input.Description, new { @class = "form-control", placeholder = "Description" } )
+    </div>
+    <div class="form-group">
+        <label for="DueDate">Due date</label>
+        @Html.TextBoxFor(p => p.DueDate, new { @class = "form-control", placeholder = "Due date" })
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
